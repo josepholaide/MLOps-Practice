@@ -145,7 +145,10 @@ bash Anaconda3-2022.05-Linux-x86_64.sh
 ### Install Docker
 
 Update existing packages using `sudo apt update`
-Install Docker using `sudo apt install docker.io`
+
+Install Docker using 
+
+`sudo apt install docker.io`
   
 To run docker without sudo:
 

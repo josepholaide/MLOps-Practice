@@ -7,19 +7,19 @@ Sign in to the [Azure portal](https://portal.azure.com/).
 * Enter virtual machines in the search or click Virtual machines under Azure services. 
 
 <p align=center>
-<img src="https://github.com/josepholaide/examples/blob/master/jpx-tokyo-stock-exchange-kaggle-competition/images/kaggle-click-account.PNG?raw=true" alt="enter username" width="900" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/azure%20home.PNG?raw=true" alt="enter username" width="900" height="300"/>
 </p>
 
   Under Services, select Virtual machines.
 
 <p align=center>
-<img src="https://github.com/josepholaide/examples/blob/master/jpx-tokyo-stock-exchange-kaggle-competition/images/kaggle-click-account.PNG?raw=true" alt="enter username" width="900" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/azure%20home2.PNG" width="900" height="300"/>
 </p>
 
 * In the Virtual machines page, select Create and then Azure Virtual machine. 
 
 <p align=center>
-<img src="https://github.com/josepholaide/examples/blob/master/jpx-tokyo-stock-exchange-kaggle-competition/images/kaggle-click-account.PNG?raw=true" alt="enter username" width="900" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/az%20vm%20create.PNG" width="900" height="300"/>
 </p>
 
   The Create a virtual machine page opens.
@@ -29,16 +29,17 @@ Sign in to the [Azure portal](https://portal.azure.com/).
   mlops will be used in this tutorial
   
 <p align=center>
-<img src="https://github.com/josepholaide/examples/blob/master/jpx-tokyo-stock-exchange-kaggle-competition/images/kaggle-click-account.PNG?raw=true" alt="enter username" width="900" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/resourcegrp.PNG" width="900" height="300"/>
 </p>
   
 * Under Instance details, enter azurevm for the Virtual machine name, and choose Ubuntu 20.04 LTS - Gen2 for your Image. 
   Leave the other defaults. The default size and pricing is only shown as an example. 
   Size availability and pricing are dependent on your region and subscription.
+  
   The Standard_E2s_v3 - 2 vcpus, 16 GiB memory will be used in this tutorial
 
 <p align=center>
-<img src="https://github.com/josepholaide/examples/blob/master/jpx-tokyo-stock-exchange-kaggle-competition/images/kaggle-click-account.PNG?raw=true" alt="enter username" width="900" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/az%20vm%20create2.PNG" alt="enter username" width="900" height="300"/>
 </p>  
  
 * Set Authentication type to 'SSH public key'
@@ -46,19 +47,23 @@ Sign in to the [Azure portal](https://portal.azure.com/).
   Set Username, Generate new key pair and set key pair name.
 
 <p align=center>
-<img src="https://github.com/josepholaide/examples/blob/master/jpx-tokyo-stock-exchange-kaggle-competition/images/kaggle-click-account.PNG?raw=true" alt="enter username" width="900" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/pem%20key1.PNG" alt="enter username" width="900" height="300"/>
 </p> 
  
 * Set Inbound port rules
   Allow selected ports and select 'HTTP (80)' and 'SSH (22)'
   
+ <p align=center>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/inbound.PNG" alt="enter username" width="900" height="300"/>
+</p> 
+  
   Leave the remaining defaults and then select the Review + create button at the bottom of the page.
  
 * It will take you to a service pricing webpage. Go through it. 
-  When you are ready, select Create.
+  When you are done, select Create.
 
 <p align=center>
-<img src="https://github.com/josepholaide/examples/blob/master/jpx-tokyo-stock-exchange-kaggle-competition/images/kaggle-click-account.PNG?raw=true" alt="enter username" width="900" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/pricing.PNG" alt="enter username" width="900" height="300"/>
 </p> 
   
 * When the Generate new key pair window opens, select Download private key and create resource. 
@@ -66,7 +71,7 @@ Sign in to the [Azure portal](https://portal.azure.com/).
   you will need the path to it in the next step.
 
 <p align=center>
-<img src="https://github.com/josepholaide/examples/blob/master/jpx-tokyo-stock-exchange-kaggle-competition/images/kaggle-click-account.PNG?raw=true" alt="enter username" width="900" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/pem%20key.PNG" width="900" height="300"/>
 </p> 
 
 ## Connect to virtual machine

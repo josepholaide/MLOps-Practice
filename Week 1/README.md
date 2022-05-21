@@ -141,6 +141,9 @@ Ensure you are in home directory, if not `cd $HOME`
 wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
 bash Anaconda3-2022.05-Linux-x86_64.sh
 ```
+
+Restat ssrh, if `base` is not in vm name. Simply  
+`(base) azureuser@azvm:~$`
  
 ### Install Docker
 

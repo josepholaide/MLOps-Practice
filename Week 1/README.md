@@ -1,4 +1,4 @@
-# Setup Jupyter Notebook on Azure via SSH
+# Setup Jupyter Notebook on Azure via SSH using Linux
 
 ## Sign in to Azure
 

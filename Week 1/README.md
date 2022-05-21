@@ -71,7 +71,7 @@ Sign in to the [Azure portal](https://portal.azure.com/).
   you will need the path to it in the next step.
 
 <p align=center>
-<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/pem%20key.PNG?raw=true" width="500" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/pem_key.PNG?raw=true" width="500" height="300"/>
 </p> 
 
 ## Connect to virtual machine

@@ -13,13 +13,13 @@ Sign in to the [Azure portal](https://portal.azure.com/).
   Under Services, select Virtual machines.
 
 <p align=center>
-<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/azure%20home2.PNG" width="700" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/azure%20home2.PNG?raw=true" width="700" height="300"/>
 </p>
 
 * In the Virtual machines page, select Create and then Azure Virtual machine. 
 
 <p align=center>
-<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/az%20vm%20create.PNG" width="700" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/az%20vm%20create.PNG?raw=true" width="700" height="300"/>
 </p>
 
   The Create a virtual machine page opens.
@@ -29,7 +29,7 @@ Sign in to the [Azure portal](https://portal.azure.com/).
   mlops will be used in this tutorial
   
 <p align=center>
-<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/resourcegrp.PNG" width="700" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/resourcegrp.PNG?raw=true" width="700" height="300"/>
 </p>
   
 * Under Instance details, enter azurevm for the Virtual machine name, and choose Ubuntu 20.04 LTS - Gen2 for your Image. 
@@ -39,7 +39,7 @@ Sign in to the [Azure portal](https://portal.azure.com/).
   The Standard_E2s_v3 - 2 vcpus, 16 GiB memory will be used in this tutorial
 
 <p align=center>
-<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/az%20vm%20create2.PNG" alt="enter username" width="700" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/az%20vm%20create2.PNG?raw=true" alt="enter username" width="700" height="300"/>
 </p>  
  
 * Set Authentication type to 'SSH public key'
@@ -47,14 +47,14 @@ Sign in to the [Azure portal](https://portal.azure.com/).
   Set Username, Generate new key pair and set key pair name.
 
 <p align=center>
-<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/pem%20key1.PNG" alt="enter username" width="700" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/pem%20key1.PNG?raw=true" alt="enter username" width="700" height="300"/>
 </p> 
  
 * Set Inbound port rules
   Allow selected ports and select 'HTTP (80)' and 'SSH (22)'
   
  <p align=center>
-<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/inbound.PNG" alt="enter username" width="700" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/inbound.PNG?raw=true" alt="enter username" width="700" height="300"/>
 </p> 
   
   Leave the remaining defaults and then select the Review + create button at the bottom of the page.
@@ -63,7 +63,7 @@ Sign in to the [Azure portal](https://portal.azure.com/).
   When you are done, select Create.
 
 <p align=center>
-<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/pricing.PNG" alt="enter username" width="600" height="600"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/pricing.PNG?raw=true" alt="enter username" width="600" height="600"/>
 </p> 
   
 * When the Generate new key pair window opens, select Download private key and create resource. 
@@ -71,7 +71,7 @@ Sign in to the [Azure portal](https://portal.azure.com/).
   you will need the path to it in the next step.
 
 <p align=center>
-<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/pem%20key.PNG" width="500" height="300"/>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/pem%20key.PNG?raw=true" width="500" height="300"/>
 </p> 
 
 ## Connect to virtual machine

@@ -74,20 +74,108 @@ Sign in to the [Azure portal](https://portal.azure.com/).
 <img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/pem_key.PNG?raw=true" width="500" height="300"/>
 </p> 
 
+ * Afte VM deploys finish, click on `Go to resource`.
+ 
+<p align=center>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/go%20to%20resource.PNG?raw=true" width="500" height="300"/>
+</p> 
+  
+ Copy Public IP address
+ 
+<p align=center>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/public-ip.PNG?raw=true" width="500" height="300"/>
+</p> 
+  
+ 
+  
 ## Connect to virtual machine
 Create an SSH connection with the VM.
 
 If you are on a Mac or Linux machine, open a Bash prompt. 
-If you are on a Windows machine, you can use a PowerShell prompt but in this tutorial, we will use git bash.
+If you are on a Windows machine, you can use a PowerShell prompt but in this tutorial, we will use Git bash. 
+Click this [link](https://git-scm.com/downloads) 
 
-At your prompt, open an SSH connection to your virtual machine. Replace the IP address with the one from your VM, and replace 
+## Open an SSH connection to your virtual machine
+At your bash prompt, open an SSH connection to your virtual machine. Replace the IP address with the one from your VM, and replace 
 the path to the .pem with the path to where the key file was downloaded.
 
 `ssh -i .\<pem-directory>\azurevmkey.pem azureuser@20.106.112.123`
   
+For easy ssh login, do the following:
+
+Open a GNU nano editor by entering `nano ~/.ssh/config` in the bash prompt
+ 
+Setup SSH config file
   
-## Step 1: Download and install the Anaconda distribution of Python
+`Host azure-mlops-zoomcamp
+    HostName 20.106.112.123 # VM Public IP
+    User azureuser # VM user
+    IdentityFile C:\Users\User\.ssh\azurevmkey.pem # Private SSH key file
+    StrictHostKeyChecking no
+    ServerAliveInterval 60 # To prevent ssh from disconnecting (optional)
+    ServerAliveCountMax 525600`
+ 
+Username gotten from 👇👇👇
+<p align=center>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/pem%20key1.PNG?raw=true" alt="enter username" width="700" height="300"/>
+</p> 
+
+Public IP gotten from 👇👇👇
+<p align=center>
+<img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/public-ip.PNG?raw=true" width="500" height="300"/>
+</p> 
+  
+Anytime you want to login to ssh instance again, type `ssh azure-mlops-zoomcamp`
+  
+## Install Anaconda, Docker and Docker Compose 
+
+### Install Anaconda
+
+Download and install the Anaconda distribution of Python
+Ensure you are in home directory, if not `cd $HOME`
+  
 `wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
 bash Anaconda3-2022.05-Linux-x86_64.sh`
+ 
+### Install Docker
+
+Update existing packages using `sudo apt update`
+Install Docker using `sudo apt install docker.io`
+  
+To run docker without sudo:
+
+`sudo groupadd docker
+sudo usermod -aG docker $USER`
+
+### Install Docker Commpose
+
+Install docker-compose in a separate directory
+
+`mkdir soft
+cd soft`
+  
+Download Docker Compose
+`wget https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-x86_64 -O docker-compose`
+  
+Make it executable
+
+`chmod +x docker-compose`
+  
+Add to the soft directory to PATH. Open the .bashrc file with nano:
+
+`nano .bashrc`
+In .bashrc, add the following command to the last line:
+
+`export PATH="${HOME}/soft:${PATH}"`
+  
+Save it and run the following to make sure the changes are applied:
+
+`source .bashrc`
+  
+### Run Docker
+
+`docker run hello-world`
+If you get 
+`docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create": dial unix /var/run/docker.sock: connect: permission denied. error`, restart your VM instance in azure's portal.
   
  

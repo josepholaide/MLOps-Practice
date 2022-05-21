@@ -172,10 +172,24 @@ Save it and run the following to make sure the changes are applied:
 
 `source .bashrc`
   
+## Veify Installation
+`which python
+
+which docker
+
+which docker-compose`
+  
 ### Run Docker
 
 `docker run hello-world`
 If you get 
 `docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create": dial unix /var/run/docker.sock: connect: permission denied. error`, restart your VM instance in azure's portal.
   
+## Setting up Jupyter Notebook
+  
+Since we have jupyter installed, we can run Jupyter notebook
+  
+To run Jupyter Notebook, run the following
+
+`jupyter notebook`  
  

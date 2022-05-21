@@ -142,23 +142,25 @@ Anytime you want to login to ssh instance again, type `ssh azure-mlops-zoomcamp`
   bash Anaconda3-2022.05-Linux-x86_64.sh
   ```
 
-* Restart ssh, if `base` is not in vm name. Simply  
+* Restart ssh, if `base` is not in vm name like this 👇👇👇.  
   `(base) azureuser@azvm:~$`
  
 ### Install Docker
 
-Update existing packages using `sudo apt update`
-
-Install Docker using 
-
-`sudo apt install docker.io`
+* Update existing packages using 
   
-To run docker without sudo:
+  `sudo apt update`
 
-```
-sudo groupadd docker
-sudo usermod -aG docker $USER
-```
+* Install Docker using 
+
+  `sudo apt install docker.io`
+  
+* To run docker without sudo:
+
+  ```
+  sudo groupadd docker
+  sudo usermod -aG docker $USER
+  ```
 
 ### Install Docker Commpose
 
@@ -189,7 +191,7 @@ sudo usermod -aG docker $USER
 
   `source .bashrc`
   
-## Veify Installation
+## Verify Installation
 
 ```
 which python
@@ -205,6 +207,7 @@ which docker-compose
 ### Run Docker
 
 `docker run hello-world`
+
 If you get
 
 ```
@@ -216,7 +219,7 @@ Restart your VM instance in azure's portal.
   
 ## Setting up Jupyter Notebook
   
-Since we have jupyter installed, we can run Jupyter notebook
+Jupyter notebook is installed with anaconda
   
 To run Jupyter Notebook, run the following:
 
@@ -264,3 +267,9 @@ Take note of the port after localhost(http://127.0.0.1:<port>/
 <p align=center>
 <img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/vscode-port.PNG?raw=true" width="600" height="300"/>
 </p>
+
+* Jupyter Homepage
+  
+  <p align=center>
+  <img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/notebook%20home.PNG?raw=true" width="700" height="500"/>
+  </p>

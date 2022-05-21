@@ -271,5 +271,5 @@ Take note of the port after localhost(http://127.0.0.1:<port>/
 * Jupyter Homepage
   
   <p align=center>
-  <img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/notebook%20home.PNG?raw=true" width="700" height="500"/>
+  <img src="https://github.com/josepholaide/MLOps-Practice/blob/main/Week%201/images/notebook%20home.PNG?raw=true" width="900" height="500"/>
   </p>
